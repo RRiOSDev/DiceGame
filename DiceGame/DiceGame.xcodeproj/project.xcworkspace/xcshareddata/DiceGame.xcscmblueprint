@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "292D3C3771F3C46C89EFA9088BE47A4B2255CED7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "292D3C3771F3C46C89EFA9088BE47A4B2255CED7" : 9223372036854775807,
+    "C4A97974195067EAA64A45599E308CB05FE0D9D4" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "631E2820-E9CA-49BD-AE55-40689887ED5B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "292D3C3771F3C46C89EFA9088BE47A4B2255CED7" : "DiceGame\/",
+    "C4A97974195067EAA64A45599E308CB05FE0D9D4" : ".."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "DiceGame",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "DiceGame\/DiceGame.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/RRiOSDev\/DiceGame.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "292D3C3771F3C46C89EFA9088BE47A4B2255CED7"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/RRiOSDev\/iOS-PersistenceCoreData.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C4A97974195067EAA64A45599E308CB05FE0D9D4"
+    }
+  ]
+}
