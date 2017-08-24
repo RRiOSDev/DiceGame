@@ -22,3 +22,5 @@ Click into the sub-folder named DiceGame to show its content.
 Double-click on the file named DiceGame.xcodeproj to open the project in Xcode.
 
 If you run into any trouble, comment below or contact our team www.RRWebDesigner.com
+
+http://rrwebdesigner.com/wp-content/uploads/2017/08/DiceGameApp.gif
