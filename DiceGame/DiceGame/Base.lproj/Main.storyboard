@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -60,45 +61,61 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="d1" translatesAutoresizingMaskIntoConstraints="NO" id="Sdk-Sc-eH8">
-                                <rect key="frame" x="137.5" y="128" width="100" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="VsO-h5-Bak"/>
-                                    <constraint firstAttribute="width" constant="100" id="lWt-nm-X08"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crapsTable@1x" translatesAutoresizingMaskIntoConstraints="NO" id="h0E-gG-VTB">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sVs-l3-TAs">
-                                <rect key="frame" x="62.5" y="504" width="250" height="43"/>
+                                <rect key="frame" x="16" y="45" width="343" height="43"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="wJu-Do-3Bn"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="43" id="HZo-1T-QaA"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="xbl-04-bkC"/>
                                     <constraint firstAttribute="height" constant="43" id="y6z-jL-XWl"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <state key="normal" title="ROLL AGAIN">
-                                    <color key="titleColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.80183217009999996" green="0.1202982807" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="dismiss" destination="YAJ-aK-f3H" eventType="touchUpInside" id="Wuj-Xe-fZI"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="d5" translatesAutoresizingMaskIntoConstraints="NO" id="qbM-5b-qru">
-                                <rect key="frame" x="137.5" y="250" width="100" height="100"/>
+                                <rect key="frame" x="137" y="419" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="2pE-Nl-Bld"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="4m8-fa-dU3"/>
                                     <constraint firstAttribute="height" constant="100" id="Is7-DS-0LQ"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="esR-aV-imi"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="d1" translatesAutoresizingMaskIntoConstraints="NO" id="Sdk-Sc-eH8">
+                                <rect key="frame" x="137.5" y="218" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="4Zm-xC-cfX"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="4e0-oo-Zb9"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="100" id="6Cr-cg-FWw"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="100" id="Hqn-s9-Zfu"/>
+                                    <constraint firstAttribute="height" constant="100" id="VsO-h5-Bak"/>
+                                    <constraint firstAttribute="width" constant="100" id="lWt-nm-X08"/>
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="Sdk-Sc-eH8" secondAttribute="centerX" id="RxA-CQ-7UA"/>
-                            <constraint firstAttribute="centerX" secondItem="sVs-l3-TAs" secondAttribute="centerX" id="TiK-fO-xy6"/>
-                            <constraint firstAttribute="centerX" secondItem="qbM-5b-qru" secondAttribute="centerX" id="hND-cS-Y0e"/>
-                            <constraint firstItem="qbM-5b-qru" firstAttribute="top" secondItem="Sdk-Sc-eH8" secondAttribute="bottom" constant="22" id="pek-Lx-9s0"/>
-                            <constraint firstItem="sVs-l3-TAs" firstAttribute="top" secondItem="qbM-5b-qru" secondAttribute="bottom" constant="154" id="rqe-3x-gGt"/>
-                            <constraint firstItem="Sdk-Sc-eH8" firstAttribute="top" secondItem="lSc-ua-Ts9" secondAttribute="bottom" constant="108" id="s80-BE-wIb"/>
+                            <constraint firstItem="wqX-Ng-MgL" firstAttribute="top" secondItem="h0E-gG-VTB" secondAttribute="bottom" id="HSa-xf-bcU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sVs-l3-TAs" secondAttribute="trailing" id="IwY-DH-uZT"/>
+                            <constraint firstItem="qbM-5b-qru" firstAttribute="centerX" secondItem="i7P-CF-tWX" secondAttribute="centerX" id="KGs-YE-qs3"/>
+                            <constraint firstItem="sVs-l3-TAs" firstAttribute="centerX" secondItem="i7P-CF-tWX" secondAttribute="centerX" id="P6d-yr-gCG"/>
+                            <constraint firstItem="sVs-l3-TAs" firstAttribute="top" secondItem="lSc-ua-Ts9" secondAttribute="bottom" constant="25" id="V71-Sz-YbB"/>
+                            <constraint firstItem="h0E-gG-VTB" firstAttribute="leading" secondItem="i7P-CF-tWX" secondAttribute="leading" id="X8n-Lb-UCA"/>
+                            <constraint firstAttribute="trailing" secondItem="h0E-gG-VTB" secondAttribute="trailing" id="bHE-KY-9Yk"/>
+                            <constraint firstItem="Sdk-Sc-eH8" firstAttribute="centerX" secondItem="i7P-CF-tWX" secondAttribute="centerX" id="lMj-0y-wDC"/>
+                            <constraint firstItem="Sdk-Sc-eH8" firstAttribute="top" secondItem="sVs-l3-TAs" secondAttribute="bottom" constant="130" id="mCS-VL-4gG"/>
+                            <constraint firstItem="qbM-5b-qru" firstAttribute="top" secondItem="Sdk-Sc-eH8" secondAttribute="bottom" constant="101" id="nKM-E4-Gu5"/>
+                            <constraint firstItem="sVs-l3-TAs" firstAttribute="leading" secondItem="i7P-CF-tWX" secondAttribute="leadingMargin" id="pCA-5N-zPv"/>
+                            <constraint firstItem="h0E-gG-VTB" firstAttribute="top" secondItem="i7P-CF-tWX" secondAttribute="top" id="wLM-C3-71g"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="Ys8-3h-LeQ" appends="YES" id="g52-Xv-KR6"/>
@@ -112,10 +129,11 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cgC-ex-3bd" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="Ys8-3h-LeQ"/>
             </objects>
-            <point key="canvasLocation" x="732" y="41"/>
+            <point key="canvasLocation" x="732" y="40.929535232383813"/>
         </scene>
     </scenes>
     <resources>
+        <image name="crapsTable@1x" width="460" height="800"/>
         <image name="d1" width="100" height="100"/>
         <image name="d5" width="100" height="100"/>
     </resources>
