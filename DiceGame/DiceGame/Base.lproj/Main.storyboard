@@ -37,11 +37,19 @@
                                     <segue destination="YAJ-aK-f3H" kind="presentation" identifier="rollDice" id="04w-zf-Etg"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diceGameLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Ju2-IY-qTr">
+                                <rect key="frame" x="66" y="110" width="243" height="208.5"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Z4M-RP-lTk" firstAttribute="top" secondItem="Ju2-IY-qTr" secondAttribute="bottom" id="2Ag-PH-xJG"/>
                             <constraint firstAttribute="centerY" secondItem="Z4M-RP-lTk" secondAttribute="centerY" id="BCT-3m-ctY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ju2-IY-qTr" secondAttribute="trailing" constant="50" id="IOo-cP-CWm"/>
+                            <constraint firstItem="Ju2-IY-qTr" firstAttribute="leading" secondItem="XqM-Nn-XaR" secondAttribute="leadingMargin" constant="50" id="MCj-Cx-NPc"/>
                             <constraint firstAttribute="centerX" secondItem="Z4M-RP-lTk" secondAttribute="centerX" id="NlJ-dc-Cav"/>
+                            <constraint firstItem="Ju2-IY-qTr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="90" id="moZ-bz-xeV"/>
+                            <constraint firstItem="Ju2-IY-qTr" firstAttribute="centerX" secondItem="XqM-Nn-XaR" secondAttribute="centerX" id="x7P-5t-ogO"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -81,7 +89,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="d5" translatesAutoresizingMaskIntoConstraints="NO" id="qbM-5b-qru">
-                                <rect key="frame" x="137" y="419" width="100" height="100"/>
+                                <rect key="frame" x="137" y="420" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="2pE-Nl-Bld"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="4m8-fa-dU3"/>
@@ -90,7 +98,7 @@
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="d1" translatesAutoresizingMaskIntoConstraints="NO" id="Sdk-Sc-eH8">
-                                <rect key="frame" x="137.5" y="218" width="100" height="100"/>
+                                <rect key="frame" x="137.5" y="219" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="4Zm-xC-cfX"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="4e0-oo-Zb9"/>
@@ -112,7 +120,7 @@
                             <constraint firstItem="h0E-gG-VTB" firstAttribute="leading" secondItem="i7P-CF-tWX" secondAttribute="leading" id="X8n-Lb-UCA"/>
                             <constraint firstAttribute="trailing" secondItem="h0E-gG-VTB" secondAttribute="trailing" id="bHE-KY-9Yk"/>
                             <constraint firstItem="Sdk-Sc-eH8" firstAttribute="centerX" secondItem="i7P-CF-tWX" secondAttribute="centerX" id="lMj-0y-wDC"/>
-                            <constraint firstItem="Sdk-Sc-eH8" firstAttribute="top" secondItem="sVs-l3-TAs" secondAttribute="bottom" constant="130" id="mCS-VL-4gG"/>
+                            <constraint firstItem="Sdk-Sc-eH8" firstAttribute="top" secondItem="sVs-l3-TAs" secondAttribute="bottom" constant="131" id="mCS-VL-4gG"/>
                             <constraint firstItem="qbM-5b-qru" firstAttribute="top" secondItem="Sdk-Sc-eH8" secondAttribute="bottom" constant="101" id="nKM-E4-Gu5"/>
                             <constraint firstItem="sVs-l3-TAs" firstAttribute="leading" secondItem="i7P-CF-tWX" secondAttribute="leadingMargin" id="pCA-5N-zPv"/>
                             <constraint firstItem="h0E-gG-VTB" firstAttribute="top" secondItem="i7P-CF-tWX" secondAttribute="top" id="wLM-C3-71g"/>
@@ -136,5 +144,6 @@
         <image name="crapsTable@1x" width="460" height="800"/>
         <image name="d1" width="100" height="100"/>
         <image name="d5" width="100" height="100"/>
+        <image name="diceGameLogo" width="300" height="142"/>
     </resources>
 </document>
